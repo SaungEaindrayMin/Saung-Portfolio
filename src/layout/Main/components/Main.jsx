@@ -3,7 +3,7 @@ import Nav from "./Nav/Nav";
 import Footer from "./Footer/Footer";
 
 const Main = () => (
-  <div className="flex flex-col min-h-screen">
+  <div className="flex flex-col min-h-screen bg-background">
     <Nav />
     <div className="flex-grow pt-14">
       <Outlet />

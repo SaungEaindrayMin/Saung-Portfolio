@@ -1,7 +1,6 @@
 import React from 'react'
 import Greeting from './Greeting'
 import EducationJourney from './EducationJourney'
-import PreviewWork from './PreviewWork'
 import SkillSection from './Skill'
 
 const About = () => {
@@ -9,7 +8,6 @@ const About = () => {
     <div >
       <Greeting/>
       <EducationJourney/>
-      <PreviewWork/>
       <SkillSection/>
     </div>
   )

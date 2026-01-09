@@ -1,37 +1,34 @@
 import React from "react";
+import { Section } from "@/components/ui/section";
+import { Container } from "@/components/ui/container";
+import { Badge } from "@/components/ui/badge";
+import { motion } from "framer-motion";
 
 const Greeting = () => {
   return (
-    <section className="w-full bg-white bg-gradient-to-r from-[#fff1f2] via-[#e0f7fa]/[.4] to-[#e8f5e9] min-h-screen flex items-center py-20">
-      <div className="w-[90%] max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-
-        {/* Optional: Add image if needed */}
-        {/* <div className="flex justify-center">
-          <img
-            src="/images/Cat.png"
-            className="max-w-sm md:max-w-md rounded-xl shadow-lg"
-            alt="Smiling Cat"
-          />
-        </div> */}
-
-        <div className="text-center md:text-left space-y-6">
-          <p className="uppercase text-sm md:text-base tracking-widest text-[#999] font-mono">
-            Hi there...
-          </p>
-          <h1 className="text-5xl md:text-6xl font-serif italic text-[#6C4F8D] leading-tight">
-            It's nice to meet you,
+    <Section className="min-h-[60vh] flex items-center justify-center bg-background py-0">
+      <Container className="text-center max-w-3xl space-y-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <Badge variant="secondary" className="mb-6 px-4 py-1 text-sm tracking-widest uppercase">
+            Hello World
+          </Badge>
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-bold text-primary tracking-tight leading-tight mb-8">
+            Nice to <span className="italic text-muted-foreground">meet</span> you.
           </h1>
-          <p className="text-base md:text-lg text-[#444] leading-relaxed">
-            As a web developer and problem solver, I’m dedicated to crafting
-            seamless digital experiences, optimizing performance, and bringing
-            ideas to life through clean, efficient code. My work is driven by a
-            passion for innovation, user-centric design, and building impactful
-            solutions.
+          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            I'm a passionate web developer dedicated to crafting seamless digital
+            experiences. I combine clean code with user-centric design to build
+            solutions that matter.
           </p>
-        </div>
-      </div>
-    </section>
+        </motion.div>
+      </Container>
+    </Section>
   );
 };
+
 
 export default Greeting;
