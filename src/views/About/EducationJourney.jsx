@@ -7,21 +7,21 @@ import { Badge } from "@/components/ui/badge";
 const EducationAndWorkJourney = () => {
   const educationItems = [
     {
-      year: "2024 - Present",
+      year: "2025 - Present",
       title: "B.Sc (Hons) Computing",
       institution: "University of Greenwich (UK) at KMD College",
       description:
         "Final year student deepening expertise in software engineering and web development.",
     },
     {
-      year: "2023 - 2024",
+      year: "2024 - 2025",
       title: "NCC Level 5 Diploma in Computing",
       institution: "KMD College",
       description:
         "Gained technical knowledge in software development, data analysis, and network management.",
     },
     {
-      year: "2022 - 2023",
+      year: "2023 - 2024",
       title: "NCC Level-4 Diploma in Computing",
       institution: "KMD College",
       description:
@@ -31,7 +31,7 @@ const EducationAndWorkJourney = () => {
 
   const workItems = [
     {
-      year: "2024 - Present",
+      year: "2025 - Present",
       title: "Web Developer",
       company: "MYDAY THU KYWAL CO., Ltd",
       description:
